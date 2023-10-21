@@ -1,0 +1,155 @@
+:root {
+  --white: white;
+  --light-gray: #acacac;
+  --dark-gray: #6c6c6c;
+  --black: #1e1e1e;
+  --orange: #f99c14;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#calculator {
+  display: grid;
+  grid-template-areas:
+    "display display display display"
+    "clear negative percentage divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero decimal equals";
+  grid-template-columns: 80px 80px 80px 80px;
+  padding: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  background-color: var(--black);
+}
+
+.light-gray {
+  background-color: var(--light-gray);
+  color: white;
+}
+
+.dark-gray {
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+.orange {
+  background-color: var(--orange);
+  color: white;
+}
+
+#answer {
+  font-size: 35px;
+  height: 40px;
+}
+
+#expression {
+  font-size: 25px;
+  height: 40px;
+  color: var(--dark-gray);
+}
+
+button {
+  border: 1px solid black;
+  height: 80px;
+  font-size: 24px;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.03);
+  border: 1px solid white;
+  color: black;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+#display {
+  grid-area: display;
+  text-align: right;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#negative {
+  grid-area: negative;
+}
+
+#percentage {
+  grid-area: percentage;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#add {
+  grid-area: add;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#equals {
+  grid-area: equals;
+}
